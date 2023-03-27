@@ -1,5 +1,6 @@
 
 
+
 body{
    font-family: 'Open Sans', sans-serif;
    padding-top: 50px;
@@ -1101,6 +1102,15 @@ div.productHeader h6{
    width: 220px;
    padding:0px;
    margin: 0 auto;
+}
+#FeauturedProducts{
+margin-left: 0px;
+}
+#heroDiv2 button{
+   width: 100%;
+}
+#heroDiv4 button{
+   width: 100%;
 }
 
 }
