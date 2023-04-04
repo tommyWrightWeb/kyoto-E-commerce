@@ -1,6 +1,5 @@
 
 
-
 body{
    font-family: 'Open Sans', sans-serif;
    padding-top: 50px;
@@ -18,7 +17,19 @@ body{
    
  }
 
+a.navbar-brand{
+   background-color:white;
+   border-radius:50px;
+  width:120px;
+  padding:15px
+}
 
+
+ .navbar.scrolled {
+   background-color:lightgray !important;
+   transition: background-color 200ms linear;
+   
+ }
 
 nav{
    margin-bottom: 500px;
@@ -1044,7 +1055,69 @@ div.image{
    display: inline-block;
  }
 
- @media only screen and (max-width: 768px) {
+ 
+
+
+@media only screen and (max-width: 375px) {
+   .socials{
+      width: 375px;
+   }
+   .image{
+      width: 240px;height: 240px;
+   }
+   .tab{
+      margin-top: 130px;
+   }
+   #paypal{
+      width: 250px;
+      margin-left: 10px;
+      margin: 0 auto;
+      
+   }
+   .card-deck {
+    margin: 0px;
+   margin: 0 auto;
+}
+.navbar{
+  width:100%;
+}
+.socials{
+   width:100%;
+}
+
+
+   }
+
+
+
+}
+@media only screen and (max-width: 320px) {
+   .socials{
+      width: 320px;
+   }
+   .image{
+      width: 220px;height: 250px;
+   }
+   .container{
+      margin-left: 10px;
+      margin-top: 150px;
+   }
+   .tab{
+      font-size: 14px;
+   }
+   
+}
+
+#hideOptions{margin-bottom: 300px;
+   
+}
+@media only screen and (max-width: 425px) {
+   #emptyCart{
+      margin-top: 20px;
+      margin-left: 95px;
+   }
+}
+@media only screen and (max-width: 768px) {
  .container{
     flex-direction: column;
     justify-content: center;
@@ -1056,9 +1129,24 @@ div.thumb img{
    width: 70px;
    height: 70px;
 }
+ #Trending{
+margin:0px
 }
+.socials{width:100%}
 
-@media only screen and (max-width: 428px) {
+#heroDiv4 button{
+   width:90%
+}
+#heroDiv2 button{
+   width:90%
+}
+#img2{
+  display:none;
+  background-image:url("images/sofa3.jpg")
+}
+ }
+
+      @media only screen and (max-width: 425px) {
    .container{
       width: 100px;
       margin-left: 20px;
@@ -1067,6 +1155,9 @@ div.thumb img{
       width: 100px;
       height: 100px;
    }
+  
+
+   
   
    .image{
       width: 320px;height: 300px;
@@ -1111,48 +1202,44 @@ margin-left: 0px;
 }
 #heroDiv4 button{
    width: 100%;
+   
 }
+#heroDiv4{
+      width:100%;
+      padding:20%;
+   }
+   #secondText{
+      display:none;
+   }
 
 }
 @media only screen and (max-width: 375px) {
-   .socials{
-      width: 375px;
-   }
-   .image{
-      width: 280px;height: 300px;
-   }
-   .tab{
-      margin-top: 130px;
-   }
-   #paypal{
-      width: 250px;
-      margin-left: 10px;
-      margin: 0 auto;
-   }
+.container{
+      
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-left:10px
+}
+.socials{
+   width:100%
+}
 }
 @media only screen and (max-width: 320px) {
-   .socials{
-      width: 320px;
-   }
-   .image{
-      width: 220px;height: 250px;
-   }
-   .container{
-      margin-left: 10px;
-      margin-top: 150px;
-   }
-   .tab{
-      font-size: 14px;
-   }
-}
-
-#hideOptions{margin-bottom: 300px;
-   
-}
-@media only screen and (max-width: 428px) {
-   #emptyCart{
-      margin-top: 20px;
-      margin-left: 95px;
-   }
-}
+.container{
       
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+ 
+}
+.socials{
+   width:100%
+}
+.image{
+   width:260px;
+   height:260px
+}
+}
