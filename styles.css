@@ -17,6 +17,15 @@ body{
    
  }
 
+ .collapse.show ul{
+    background-color:lightGray;
+    border-radius: 3%;
+    padding:5px;
+  
+    
+  
+ }
+
 a.navbar-brand{
    background-color:white;
    border-radius:50px;
@@ -194,6 +203,11 @@ justify-content: space-between;
 div.card:hover {
    
       border:1px solid black
+  }
+
+  .image-grid img:hover{
+   filter: brightness(70%);
+   cursor: pointer;
   }
 
   #heroFirst{
@@ -1085,12 +1099,20 @@ div.image{
    width:100%;
 }
 
+#logoImg{
+   width: 60px;
+   height: 60px;
+}
+a.navbar-brand{
+   width: 90px;
+}
+
 
    }
 
 
 
-}
+
 @media only screen and (max-width: 320px) {
    .socials{
       width: 320px;
@@ -1152,19 +1174,26 @@ margin:0px
       margin-left: 20px;
    }
    div.thumb img{
-      width: 100px;
-      height: 100px;
+      width: 60px;
+      height: 60px;
    }
   
-
+#FeauturedProducts{
+margin-left: 0px;
+}
+   #NewItemDisplay{
+      flex-direction:
+         column;
+      }
+      #newItemRight{
+         margin:0;
+      }
    
   
    .image{
       width: 320px;height: 300px;
    }
-   .socials{
-      width: 425px;
-   }
+  
    #heroDiv1{display: none;}
    #heroDiv3{display: none;}
   
@@ -1194,9 +1223,7 @@ div.productHeader h6{
    padding:0px;
    margin: 0 auto;
 }
-#FeauturedProducts{
-margin-left: 0px;
-}
+
 #heroDiv2 button{
    width: 100%;
 }
@@ -1212,7 +1239,7 @@ margin-left: 0px;
       display:none;
    }
 
-}
+      }
 @media only screen and (max-width: 375px) {
 .container{
       
@@ -1242,4 +1269,43 @@ margin-left: 0px;
    width:260px;
    height:260px
 }
+.tab button{
+   font-size:14px;
 }
+.tab{
+   margin-top:
+      200px;
+   }
+}
+
+
+/* Container */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Images */
+.image-grid img {
+  width: 100%;
+  height: 320px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+  .image-grid img{
+     margin-bottom:10px
+  }
+}
+@media screen and (max-width: 380px) {
+  
+.image-grid img {
+  width: 100%;
+  height: 220px;
+}
+}
+
