@@ -1,271 +1,1311 @@
-<!doctype html>
-<html lang="en">
 
-<head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Shop</title>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-   <link rel="stylesheet" href="styles.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"></script>
-   <script src="app.js" async></script>
 
-</head>
+body{
+   font-family: 'Open Sans', sans-serif;
+   padding-top: 50px;
+}
+ #productsContainer{
+   
+    padding-top: 20px;
+    height: 400px;
+    margin: 0 auto;
+    justify-content: center;
+   width: 90%;
+    color:black;
+    margin-bottom: 250px;
+
+   
+ }
+
+ .collapse.show ul{
+    background-color:lightGray;
+    border-radius: 3%;
+    padding:5px;
+  
+    
+  
+ }
+
+a.navbar-brand{
+   background-color:white;
+   border-radius:50px;
+  width:120px;
+  padding:15px
+}
+
+
+ .navbar.scrolled {
+   background-color:lightgray !important;
+   transition: background-color 200ms linear;
+   
+ }
+
+nav{
+   margin-bottom: 500px;
+}
+
+ .thumb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+ #newItemLeft{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin:10px;
+    padding:50px;
+ }
+
+ #newItemRight{
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    margin-right: 20px;
+  
+    
+   
+ }
+ #newItemRight img{
+  width: 100%;
+  margin-right: 40px;
+}
+ #NewItemDisplay{
+    display: flex;
+    
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:#F8F8F8;
+    margin-bottom: 100px;
+    
+ }
+
+ #newItemName{
+    text-align: center;
+ }
+#TrendingNow{
+   max-height: 300px;
+}
+
+.card3{
+   max-height: 300px;
+}
+
+#Trending{
+   margin-left: 50px;
+}
+   .container {
+      display: flex;
+      margin-left: 50px;
+      margin: 0 auto;
+     
+     justify-content: center;
+      width: 100%;
+ }
+ #firstImg{
+    position: relative;
+    cursor: pointer;
+ }
+ #firstImg:hover{
+   filter: brightness(70%);
+ }
+ #firstText{
+    position: absolute;
+    bottom: 17px;
+            right: 50px;
+
+   color: white;
+   
+
+ }
+ #secondImg{
+   position: relative;
+   cursor: pointer;
+}
+#secondImg:hover{
+   filter: brightness(70%);
+ }
+#secondText{
+   position: absolute;
+   bottom: 17px;
+           right: 50px;
+           color: white;
+           
+}
+#thirdImg{
+   position: relative;
+   cursor: pointer;
+}
+#thirdImg:hover{
+   filter: brightness(70%);
+ }
+#thirdText{
+   position: absolute;
+   bottom: 17px;
+           right: 50px;
+           color: white;
+}
+#fourthImg{
+   position: relative;
+   cursor: pointer;
+}
+#fourthImg:hover{
+   filter: brightness(70%);
+ }
+#fourthText{
+   position: absolute;
+   bottom: 17px;
+           right: 50px;
+           color: white;
+}
+ .side {
+      display: flex;
+      flex-direction: column;
+ }
+ .image {
+      display: block;
+      margin: 3px;
+ }
+   
+
+.logo{
+   height: 100px;
+
+
+  
+}
+.navbar{
+   padding-left: 25px;
+   padding-right: 25px;
+   box-shadow: slategrey;
+ 
+  
+
+justify-content: space-between;
+
+}
+
+.card-deck{
+ margin: 50px;
+}
+
+#FeauturedProducts{
+   margin-top: 150px;
+   margin-left: 50px;
+}
+
+div.card:hover {
+   
+      border:1px solid black
+  }
+
+  .image-grid img:hover{
+   filter: brightness(70%);
+   cursor: pointer;
+  }
+
+  #heroFirst{
+     width: 90%;
+     margin: 0 auto;
+     height: 400px;
+     background-color: gray;
+     margin-top: 150px;
+     margin-bottom: 150px;
+     display: flex;
+  }
+  .navbar-default{
+   transition:500ms ease;
+   background:transparent;
+ }
+ .navbar-default.scrolled{
+   background:#000;
+ }
+
+  #heroDiv1{
+     
+   width: 50%;
+   margin: 10px;
+   height: auto;
+   
+}
+
+#heroDiv4{
+     
+   width: 35%;
+   margin: 10px;
+   height: auto;
+}
+#heroDiv1 img:hover{
+   filter: brightness(70%);
+   cursor: pointer;
+  
+   
+}
+#heroDiv3 img:hover{
+   filter: brightness(70%);
+   cursor: pointer;
+  
+   
+}
+#heroDiv2{
+     display: flex;
+     flex-direction: column;
+     color: white;
+     
+   
+ 
+   justify-content: center;
+   margin: 0 auto;
+   
+}
+#heroDiv2 button{
+   width: 50%;
+ 
+}
+#heroDiv2 button:hover{
+  color: white;
+  background-color:black;
+ 
+}
+
+#heroSecond{
+   width: 90%;
+   margin: 0 auto;
+   height: 400px;
+   background-color: gray;
+   margin-top: 150px;
+   margin-bottom: 150px;
+   display: flex;
+}
+
+
+
+#heroDiv3{
+   
+ width: 50%;
+ margin: 10px;
+ 
+}
+#heroDiv4{
+   display: flex;
+   flex-direction: column;
+   color: white;
+   
+ 
+
+ justify-content: center;
+ margin: 0 auto;
+ 
+}
+#heroDiv4 button{
+ width: 50%;
+
+}
+#heroDiv4 button:hover{
+color: white;
+background-color:black;
+
+}
+   .socials {
+      padding: 50px;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      height: 20vh;
+      width:100%; 
+      align-content: center;
+      text-align:center;
+   }
+
+   .socials h3{
+      padding-top:15px
+   }
+
+  @media (max-width : 450px)  {
+   #banner3 .banner-box{
+width: 100%;
+height :80vh;
+   }
+   .footer1{
+      text-align: center;
+   }
+   #hero {
+     background-size: cover;
+     background-size: 120vh;
+    
+     background-repeat: no-repeat;
+   }
+   #banner1{
+      background-size: cover;
+      background-size: 250vh;
+      padding:10px
+      
+   }
+   #banner1 h4{
+    padding-top: 0px;
+      
+   }
+
+  }
+
+
+ 
+
+
+
+  #banner4 h4{
+   padding-top: 170px;
+  }
+
+
+
+
+
+  .shop-item-image{
+     width: 120px;
+     height: 120px;
+  }
+
+  .shop-items{
+     align-items: center;
+     text-align: center;
+     padding-bottom: 20px;
+  }
+
+  .cart-items{
+     text-align: center;
+  }
+
+  .productsContainer{
+     max-width: 650px;
+      padding-top: 50px;
+       justify-content: space-around;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+     
+   }
+
+   .productHeader{
+      width: 100%;
+      max-width: 650px;
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: 4px solid grey;
+      margin: 0 auto;
+   }
+
+   .product-title{
+      width: 45%;
+   }
+   .price{
+      width: 25%;
+      border-bottom: gray 2px;
+      display: flex;
+      align-items: center;
+   }
+   .total{
+      width: 25%;
+      
+      display: flex;
+      align-items: center;
+   }
+   .quantity{
+      width: 30%;
+      display: flex;
+      align-items: center;
+   }
+
+   .product{
+   width: 100%;
+   display: flex;
+   justify-content:space-between;
+   align-items: flex-start;
+   padding: 10px 0;
+   justify-content: space-evenly;
+   border-bottom: 1px solid gray;
+   }
+
+   .product span{
+   padding: 60px;
+   }
+   .add-cart{
+      border: 1px solid black;
+      box-shadow: 1px 1px black;
+      border-radius: 0px;
+      background-color: lightgray;
+      color: black
+      ;
+   }
+
+   .empty{
+      margin-top: 20px;
+      background-color:pink;
+      color: gray;
+   }
+   
+   .add-cart:hover{
+      color: white;
+      background-color: black;
+   }
+   .card-footer{
+      background-color:#FFF9FD;
+   }
+
+   .productHeader h6{
+      padding-left: 75px;
+      text-align: center;
+   }
+
+   .products{
+      border-bottom: solid 2px gray;
+   }
+
+   .paymentContainer{
+      text-align: center;
+   }
+
+   .customerInfo{
+      margin-top: 10px;
+   }
+
+   .modal{
+      text-align: center;
+   }
+
+   .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 50px;
+      justify-content: space-evenly;
+      border-radius: 10px;
+      text-align: center;
+      border-bottom: gray 0.2px;
+      
+     
+   }
+
+   .container2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 50px;
+      justify-content: space-evenly;
+      border-radius: 10px;
+      text-align: center;
+      border-bottom: gray 0.2px;
+      
+      
+      
+     
+   }
+
+   .container2 img{
+display: flex;
+justify-content: right;
+
+   }
+   .container3{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 50px;
+      justify-content: space-evenly;
+      border-radius: 10px;
+      text-align: center;
+      border-bottom: gray 0.2px;
+      
+    
+   }
+   .container4{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 50px;
+      justify-content: space-evenly;
+      border-radius: 10px;
+      text-align: center;
+      border-bottom: gray 0.2px;
+     
+      padding-bottom: 75px;
+
+   }
+
+   .image{
+      border: 1.5px lightgray;
+      margin: 20px;
+      border-spacing: 20px;
+      border-radius: 2%;
+     border: lightgray;
+     text-align: left;
+    
+
+      
+   }
+
+div.image{
+   border: 1.5px solid	#E0E0E0;
+}
+
+
+.image img {
+   border-radius: 1%;
+   margin: 0;
+   max-width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+  }
+  .image img:hover{
+   filter: brightness(70%);
+  
+ }
+ .image:hover{
+   border: 1px solid black;
+ }
+
+
+
+
+
+
+
+   .infoContainer{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 20px;
+      border-top: 0.2px solid gray;
+      background-color: white;
+      
+      
+   }
+
+   .cart nav-item{
+      border-radius: 50%;
+
+   }
+
+  .newsInput{
+     margin-bottom: 20px;
+     width:35%;
+  }
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+     body{
+        text-align: center;
+        
+     }
+   .container2{
+     height:500px;
+     clear: both;
+     display: block;
+     padding:20px;
+     padding-bottom: 2200px;
+     
+     
+     
+   }
+   .container3{
+      height:500px;
+      clear: both;
+      display: block;
+      padding:20px;
+      padding-bottom: 2200px;
+      
+    }
+    .container4{
+      height:500px;
+      clear: both;
+      display: block;
+      padding:20px;
+      padding-bottom: 2200px;
+      
+    }
+ 
+
+   .container2 img{
+      width:400px;
+      height: 400px;
+      
+   }
+   .container3 img{
+      width:400px;
+      height: 400px;
+   }
+   .container4 img{
+      width:400px;
+      height: 400px;
+   }
+   #banner1 h4{
+     padding-top: 30px;
+   }
+
+
+}
+
+@media only screen and (max-width: 425px) {
+   body{
+      text-align: center;
+      margin: 0px;
+   }
+   .container2{
+     height:500px;
+     width: 420px;
+     clear: both;
+     display: block;
+     
+     padding-bottom: 1800px;
+     margin-left: 10px;
+     
+   }
+   .container3{
+      height:500px;
+      width: 420px;
+      clear: both;
+      display: block;
+    
+      padding-bottom: 1800px;
+      margin-left: 10px;
+      
+    }
+    .container4{
+      height:500px;
+      width: 420px;
+      clear: both;
+      display: block;
+     
+      padding-bottom: 1800px;
+      margin-left: 10px;
+      
+    }
+   
+
+   .container2 img{
+      width:300px;
+      height: 300px;
+      margin-left: 10px;
+   }
+   .container3 img{
+      width:300px;
+      height: 300px;
+      margin-left: 10px;
+   }
+   .container4 img{
+      width:300px;
+      height: 300px;
+      margin-left: 10px;
+   }
+   .image{
+      width: 320px;
+   }
+   .productsContainer img{
+      display: none;
+
+   }
+   .productsContainer .price{
+      padding-right: 10px;
+    
+
+   }
+   .productsContainer .quantity{
+      padding-right: 10px;
+    
+
+   }
+
+   .socials{
+      width: 600px;
+   }
+   .footer1{
+      width: 600px;
+   }
+
+   #paypal{
+      width: 400px;
+     
+      padding-left: 100px;
+   }
+
+   #emptyCart{
+      margin-top: 20px;
+      margin-left: 180px;
+   }
+
+   #marquee{
+      width: 600px;
+   }
+
+   #hero{
+      width: 600px;
+   }
+
+   #products1{
+      width: 600px;
+   }
+
+   #banner1{
+      width: 600px;
+   }
+   #newIn{
+      width: 600px;
+   }
+   #firstSection{
+      width: 600px;
+   }
+
+   #banner2{
+      width:600px;
+   }
+
+   #offers{
+      width: 600px;
+   }
+
+  
+       
+
+
+
+@media only screen and (max-width: 320px) {
+   body{
+      text-align: center;
+      margin: 0 auto;
+      padding: 0px;
+   }
+   .container2{
+     height:400px;
+     width: 320px;
+     clear: both;
+     display: block;
+     
+     padding-bottom: 1300px;
+     margin-left: 2px;
+   }
+   .container3{
+      height:400px;
+      width: 320px;
+      clear: both;
+      display: block;
+      margin-left: 2px;
+      padding-bottom: 1300px;
+      
+    }
+    .container4{
+      height:400px;
+      width: 320px;
+      clear: both;
+      display: block;
+      margin-left: 2px;
+      padding-bottom: 1300px;
+      
+    }
+   
+
+   .container2 img{
+      width: 280px;
+      height: 280px;
+   }
+   .container3 img{
+      width:280px;
+      height: 280px;
+   }
+   .container4 img{
+      width:280px;
+      height: 280px;
+   }
+   .image{
+      width: 290px;
+      margin-left: 40px;
+   }
+   nav{
+      
+         padding-bottom: 100px;
+       
+   
+      }
+      .footer1{
+         width: 300px;
+      }
+      .socials{
+         width:600px;
+      }
+      #paypal{
+         width:300px;
+        
+         padding-left: 110px;
+      }
+      #banner4{
+         width:300px
+      }
+      #banner5{
+         width: 300px;
+      }
+      .infoContainer{
+         width: 300px;
+      }
+      
+    
+
+   }
+   
+       
+       
+}
+@media only screen and (max-width: 375px ) {
+   body{
+      text-align: center;
+      margin: 0 auto;
+      padding: 0px;
+
+   }
+   .container2{
+      height:400px;
+      width: 320px;
+      clear: both;
+      display: block;
+      
+      padding-bottom: 1800px;
+      margin-left: 2px;
+    }
+    .container3{
+       height:400px;
+       width: 320px;
+       clear: both;
+       display: block;
+       margin-left: 2px;
+       padding-bottom: 1800px;
+       
+     }
+     .container4{
+       height:400px;
+       width: 320px;
+       clear: both;
+       display: block;
+       margin-left: 2px;
+       padding-bottom: 1800px;
+       
+     }
+     #paypal{
+      margin-left: 3000px;
+   }
+   .socials{
+      width: 8000px;
+   }
+   
+
+}
+
+
+@media only screen and (max-width: 425px) {
+.productsContainer{
+   max-width: 350px;
+    padding-top: 50px;
+     justify-content: space-around;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+   
+ }
+
+ .productHeader{
+    width: 100%;
+    max-width: 350px;
+    justify-content: left;
+    display: flex;
+    
+    border-bottom: 4px solid grey;
+    margin: 0 auto;
+ }
+ .footer2{
+   width: 450px;
+   
+}
+.socials{
+   width:600px;
+}
+
+#banner5{
+   width:450px;
+  
+  
+}
+
+.final1{
+   width: 450px;
+}
+#banner4{
+   width:450px;
+  
+  
+}
+.infoContainer{
+  width: 450px;
+  
+  
+}
+
+
+}
+
+
+   
+   
+   
+ 
+ 
+
+   #exampleModal{
+      color: black;
+      text-shadow: none;
+   }
+
+   .socialsLogo{
+      justify-content: space-evenly;
+      color: rgb(207, 88, 88);
+      padding: 20px;
+   }
+
+
+   #paypal{
+      text-align: center;
+      align-items: center;
+     margin: 50px;
+   }
+
+   #hideOptions{
+      margin: 10px auto;
+      width: 50%;
+      border: 1px solid grey;
+      padding: 10px;
+      
+      align-items: center;
+      text-align: center;
+   }
+
+/* Style the tab */
+.tab {
+   margin-top: 100px;
+   overflow: hidden;
+   border: 1px solid #ccc;
+   background-color: #f1f1f1;
+
+   display: flex;
+   justify-content: center;
+ }
+ 
+ /* Style the buttons that are used to open the tab content */
+ .tab button {
+   background-color: inherit;
+   float: left;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 14px 16px;
+   transition: 0.3s;
+   
+ }
+ 
+ /* Change background color of buttons on hover */
+ .tab button:hover {
+   background-color: #ddd;
+ }
+ 
+ /* Create an active/current tablink class */
+ .tab button.active {
+   background-color: #ccc;
+ }
+ 
+ /* Style the tab content */
+ .tabcontent {
+   display: none;
+   padding: 6px 12px;
+   border: 1px solid #ccc;
+   border-top: none;
+ }
+
+ 
+
+.card1{
+   margin: 20px;
+}
+
+
+
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 50px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ 
+ .modal-content {
+   margin: auto;
+   text-align: center;
+ }
+ 
+ .modal-image {
+   display: inline-block;
+ }
+
+ 
+
+
+@media only screen and (max-width: 375px) {
+   .socials{
+      width: 375px;
+   }
+   .image{
+      width: 240px;height: 240px;
+   }
+   .tab{
+      margin-top: 130px;
+   }
+   #paypal{
+      width: 250px;
+      margin-left: 10px;
+      margin: 0 auto;
+      
+   }
+   .card-deck {
+    margin: 0px;
+   margin: 0 auto;
+}
+.navbar{
+  width:100%;
+}
+.socials{
+   width:100%;
+}
+
+#logoImg{
+   width: 60px;
+   height: 60px;
+}
+a.navbar-brand{
+   width: 90px;
+}
+
+
+   }
+
+
+
+
+@media only screen and (max-width: 320px) {
+   .socials{
+      width: 320px;
+   }
+   .image{
+      width: 220px;height: 250px;
+   }
+   .container{
+      margin-left: 10px;
+      margin-top: 150px;
+   }
+   .tab{
+      font-size: 14px;
+   }
+   
+}
+
+#hideOptions{margin-bottom: 300px;
+   
+}
+@media only screen and (max-width: 425px) {
+   #emptyCart{
+      margin-top: 20px;
+      margin-left: 95px;
+   }
+}
+@media only screen and (max-width: 768px) {
+ .container{
+    flex-direction: column;
+    justify-content: center;
+ }
+ .image{
+    width: 650px;height: 550px;
+ }
+div.thumb img{
+   width: 70px;
+   height: 70px;
+}
+ #Trending{
+margin:0px
+}
+.socials{width:100%}
+
+#heroDiv4 button{
+   width:90%
+}
+#heroDiv2 button{
+   width:90%
+}
+#img2{
+  display:none;
+  background-image:url("images/sofa3.jpg")
+}
+ }
+
+      @media only screen and (max-width: 425px) {
+   .container{
+      width: 100px;
+      margin-left: 20px;
+   }
+   div.thumb img{
+      width: 60px;
+      height: 60px;
+   }
+  
+#FeauturedProducts{
+margin-left: 0px;
+}
+   #NewItemDisplay{
+      flex-direction:
+         column;
+      }
+      #newItemRight{
+         margin:0;
+      }
+   
+  
+   .image{
+      width: 320px;height: 300px;
+   }
+  
+   #heroDiv1{display: none;}
+   #heroDiv3{display: none;}
+  
+  #firstImg{
+     width: 300px;
+  }
+  #secondImg{
+   width: 300px;
+}
+#thirdImg{
+   width: 300px;
+}
+#fourthImg{
+   width: 300px;
+}
+.product span{
+   padding: 30px;
+}
+.productsContainer{
+   margin-top: 120px;
+}
+div.productHeader h6{
+   padding:5px;
+}
+#paypal{
+   width: 220px;
+   padding:0px;
+   margin: 0 auto;
+}
+
+#heroDiv2 button{
+   width: 100%;
+}
+#heroDiv4 button{
+   width: 100%;
+   
+}
+#heroDiv4{
+      width:100%;
+      padding:20%;
+   }
+   #secondText{
+      display:none;
+   }
+
+      }
+@media only screen and (max-width: 375px) {
+.container{
+      
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-left:10px
+}
+.socials{
+   width:100%
+}
+}
+@media only screen and (max-width: 320px) {
+.container{
+      
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+ 
+}
+.socials{
+   width:100%
+}
+.image{
+   width:260px;
+   height:260px
+}
+.tab button{
+   font-size:14px;
+}
+.tab{
+   margin-top:
+      200px;
+   }
+}
+
+
+/* Container */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Images */
+.image-grid img {
+  width: 100%;
+  height: 320px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+  .image-grid img{
+     margin-bottom:10px
+  }
+}
+@media screen and (max-width: 380px) {
+  
+.image-grid img {
+  width: 100%;
+  height: 220px;
+}
+}
 
-<body>
-
-   <nav class="navbar fixed-top navbar-expand-lg bg-transparent">
-      <div class="container-fluid">
-         <a class="navbar-brand" href="#"> <img height="100px" width="100px" src="images/kyoto (2).png" alt="">
-
-         </a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="shop.html">Shop</a>
-               </li>
-
-               <li class="nav-item">
-
-               </li>
-
-               <li class="cart nav-item"> <button> <a class="nav-link" href="cart.html"> <i
-                           class="bi bi-bag fa-10x"></i> </a> Cart <span>0</span>
-
-                  </button>
-
-               </li>
-            </ul>
-         </div>
-      </div>
-   </nav>
-
-
-
-
-   <div class="container">
-
-      <div id="firstImg">
-         <img class="image" src="images/home.jpg" height="540px" width="420px" alt="null">
-         <div id="firstText">
-            <h3>LIVE COMFORTABLY</h3>
-         </div>
-
-      </div>
-
-      <div id="secondImg">
-         <img class="image" src="images/soap2.jpg" height="540px" width="300px" alt="null">
-         <div>
-            <h3 id="secondText">SKINCARE</h3>
-         </div>
-
-      </div>
-
-      <div class="side">
-         <div id="thirdImg">
-            <img class="image" src="images/kitchen.jpg" width="250px" height='250px' alt="null">
-            <div id="thirdText">
-               <h4>KITCHEN</h4>
-            </div>
-
-         </div>
-
-         <div id="fourthImg">
-
-            <img class="image" src="images/gameboy.jpg" width="250px" height='250px' alt="null">
-            <div id="fourthText">
-               <h4>ELECTRONICS</h4>
-            </div>
-         </div>
-
-      </div>
-   </div>
-   </div>
-
-   <h2 id="FeauturedProducts">Feautured Products</h2>
-
-
-
-   <div class="card-deck">
-      <div class="card">
-
-         <img class="card-img-top" src="images/standingLight.jpg" alt="Card image cap">
-         <div class="card-body">
-            <h5 class="card-title">Light</h5>
-            <h6>$89</h6>
-
-
-         </div>
-
-      </div>
-      <div class="card">
-         <img class="card-img-top" src="images/vase.jpg" alt="Card image cap">
-         <div class="card-body">
-            <h5 class="card-title">Vase</h5>
-            <h6>$19</h6>
-
-
-         </div>
-      </div>
-      <div class="card">
-         <img class="card-img-top" src="images/light4.jpg" alt="Card image cap">
-         <div class="card-body">
-            <h5 class="card-title">Hanging light</h5>
-            <h6>$59</h6>
-
-
-         </div>
-      </div>
-   </div>
-
-   </div>
-   <div class="card-deck">
-      <div class="card">
-
-         <img class="card-img-top" src="images/kettle2.jpg" alt="Card image cap">
-         <div class="card-body">
-            <h5 class="card-title">Kettle</h5>
-            <h6>$49</h6>
-
-
-         </div>
-
-      </div>
-      <div class="card">
-         <img class="card-img-top" src="images/pictures.jpg" alt="Card image cap">
-         <div class="card-body">
-            <h5 class="card-title">Picture frames</h5>
-            <h6>$19</h6>
-
-
-         </div>
-      </div>
-      <div class="card">
-         <img class="card-img-top" src="images/sofa.jpg" alt="Card image cap">
-         <div class="card-body">
-            <h5 class="card-title">Leather Sofa</h5>
-            <h6>$599</h6>
-
-
-         </div>
-      </div>
-   </div>
-
-
-   </div>
-
-
-
-   <section>
-      <div id='heroFirst'>
-         <div id="heroDiv1"><img width="100%" height="100%" src="images/modern2.jpg" alt="">
-         </div>
-         <div id="heroDiv2">
-            <h1>Create Your Perfect</h1>
-            <h3>Modern Interior</h3>
-            <h6>Shop online or instore</h6>
-            <button class="centreButton">Shop Now</button>
-         </div>
-      </div>
-   </section>
-
-   <h2 id="Trending">Trending Now</h2>
-
-   <div class="card-deck">
-      <div class="card">
-         <img class="card-img-top" src="images/jared-rice-PibraWHb4h8-unsplash.jpg" alt="Card image cap">
-         <div class="card-body">
-            <h5 class="card-title">Bath Tub</h5>
-            <h6>$799</h6>
-         </div>
-
-      </div>
-      <div class="card">
-         <img class="card-img-top" src="images/eggchair.jpg" alt="Card image cap">
-         <div class="card-body">
-            <h5 class="card-title">Hanging Chair</h5>
-            <h6>$149</h6>
-
-         </div>
-
-      </div>
-      <div class="card">
-         <img class="card-img-top" src="images/christian-mackie-6BJu73-UJpg-unsplash.jpg" alt="Card image cap">
-         <div class="card-body">
-            <h5 class="card-title">Mirror</h5>
-            <h6>$89</h6>
-         </div>
-      </div>
-   </div>
-
-
-   <section>
-      <div id='heroSecond'>
-
-         <div id="heroDiv4">
-            <h1>Comfortable and Elegant</h1>
-            <h3>Living</h3>
-            <h6>Everything tailored for you</h6>
-            <button id="butt" class="centreButton">Shop Now</button>
-         </div>
-         <div id="heroDiv3"><img width="100%" height="100%" src="images/kitchen.jpg" alt=""></div>
-
-      </div>
-   </section>
-
-
-
-
-   <section class="socials">
-      <div>
-
-         <div id="socialLogo">
-            <h3>Connect with us</h3>
-
-            <a class="socialsLogo" href="https://facebook.com"> <i class="bi bi-facebook"></i></a>
-            </a>
-            <a class="socialsLogo" href="https://twitter.com">
-               <i class="bi bi-twitter"></i></a>
-            <a class="socialsLogo" href="https://instagram.com">
-               <i class="bi bi-instagram"></i> </a>
-            <a class="socialsLogo" href="https://youtube.com">
-               <i class="bi bi-youtube"></i> </a>
-
-         </div>
-      </div>
-   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-      crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"></script>
-
-</body>
